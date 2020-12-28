@@ -3,9 +3,9 @@ function App() {
     return (
         <Container>
             <Row>
-                <h1>Todo App</h1>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
+                    <h1>Todo App</h1>
                 </Col>
             </Row>
         </Container>
@@ -72,7 +72,6 @@ function AddItemForm({ onNewItem }) {
     const { Form, InputGroup, Button } = ReactBootstrap;
 
     const [newItem, setNewItem] = React.useState('');
-    React.item(1) = {'Todo item 1'};
     const [submitting, setSubmitting] = React.useState(false);
 
     const submitNewItem = e => {
