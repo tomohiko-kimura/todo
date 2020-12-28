@@ -71,6 +71,7 @@ function AddItemForm({ onNewItem }) {
     const { Form, InputGroup, Button } = ReactBootstrap;
 
     const [newItem, setNewItem] = React.useState('');
+    React.item(1) = {'Todo item 1'};
     const [submitting, setSubmitting] = React.useState(false);
 
     const submitNewItem = e => {
